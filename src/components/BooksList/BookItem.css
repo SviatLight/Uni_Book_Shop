@@ -1,0 +1,88 @@
+.book__item {
+  max-width: 180px;
+  width: 100%;
+  padding: 17px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  border-top: 5px solid #fff;
+}
+
+.book__item:hover {
+  cursor: pointer;
+  border-top: 5px solid #c65858;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 80%);
+  transition: 0.2s ease-in;
+}
+
+.book__image {
+  max-width: 180px;
+  width: 100%;
+  padding: 49px 0;
+}
+
+.book__image img {
+  width: 100%;
+  height: 277px;
+  object-fit: contain;
+  user-select: none;
+}
+
+.book__title {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  height: 45px;
+  overflow: hidden;
+}
+
+.book__author {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  height: 24px;
+  overflow: hidden;
+}
+
+.book__feedback {
+  padding: 8px 0;
+}
+
+.book__rate {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px 0;
+}
+
+.book__rate img {
+  width: 15px;
+}
+
+.book__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book__price {
+  color: #c65858;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.book__btn button {
+  border: none;
+  background-color: #fff;
+  border: 1px solid #c65858;
+  color: #c65858;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  width: 100px;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.book__btn button:hover {
+  background-color: #c65858;
+  color: #fff;
+  transition: 0.3s ease-in;
+}

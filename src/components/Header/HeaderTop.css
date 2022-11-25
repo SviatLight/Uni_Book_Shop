@@ -1,0 +1,21 @@
+.header__top {
+  background-color: #f5f4f0;
+  margin-top: 35px;
+}
+
+.menu {
+  display: flex;
+  max-width: 1140px;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.menu__item:hover {
+  color: #c65858;
+  transition: 0.3s ease-in;
+}

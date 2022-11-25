@@ -1,0 +1,11 @@
+.sort__block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 31px;
+  background-color: #e25757;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+}

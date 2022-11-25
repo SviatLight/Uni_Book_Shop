@@ -1,0 +1,14 @@
+.header__middle-wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header__contact {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}

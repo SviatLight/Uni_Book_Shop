@@ -1,0 +1,76 @@
+.book__preview-wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 58px;
+  display: flex;
+}
+
+.book__preview-img {
+  max-width: 200px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.book__preview-img img {
+  width: 100%;
+}
+
+.book__preview-side {
+  display: flex;
+  max-width: 877px;
+  width: 100%;
+}
+
+.book__preview-details {
+  padding: 36px 16px 33px 0;
+  margin-left: 70px;
+  width: 100%;
+  border-bottom: 1px solid #e5e0ce;
+}
+
+.book__preview-title h2 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+.book__preview-key p {
+  margin: 20px 0;
+}
+
+.book__preview-feedback {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-stars {
+  display: flex;
+  gap: 5px;
+  padding: 15px 0;
+  margin-right: 24px;
+}
+
+.book__preview-feedback p {
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.feedback {
+  width: 20px;
+  position: relative;
+  top: 6px;
+  left: 0;
+}
+
+.feedback-stars img {
+  width: 15px;
+}
+
+.book__preview-description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25%;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
