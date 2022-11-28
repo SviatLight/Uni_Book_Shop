@@ -5,4 +5,21 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   margin-top: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .book__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 675px) {
+  .book__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .book__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

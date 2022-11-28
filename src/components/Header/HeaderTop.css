@@ -1,6 +1,7 @@
 .header__top {
   background-color: #f5f4f0;
   margin-top: 35px;
+  padding: 0 20px;
 }
 
 .menu {
@@ -18,4 +19,10 @@
 .menu__item:hover {
   color: #c65858;
   transition: 0.3s ease-in;
+}
+
+@media (max-width: 1010px) {
+  .header__top {
+    margin: 0;
+  }
 }

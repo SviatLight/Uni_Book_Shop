@@ -13,3 +13,9 @@
   max-width: 1024px;
   width: 100%;
 }
+
+@media (max-width: 1010px) {
+  .sale__banner {
+    display: none;
+  }
+}

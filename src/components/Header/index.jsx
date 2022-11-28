@@ -11,13 +11,13 @@ const Header = () => {
       <div className="sale__banner">
         <img src={Sale} alt="Sale" />
       </div>
-      <div className="header__top">
+      <div className="header__top-m">
         <HeaderTop />
       </div>
-      <div className="header__middle">
+      <div className="header__middle-m">
         <HeaderMiddle />
       </div>
-      <div className="header__bottom">
+      <div className="header__bottom-m">
         <HeaderBottom />
       </div>
     </div>

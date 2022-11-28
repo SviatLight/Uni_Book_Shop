@@ -11,6 +11,9 @@ const themes = ['Детектив', 'Пригоди'];
 const Filter = () => {
   return (
     <div className="side__bar">
+      <div className="header-themes">
+        <h2>Тематика</h2>
+      </div>
       <div className="checkbox__section">
         {themes.map((item, index) => (
           <FilterItem

@@ -7,7 +7,7 @@ const Pagination = () => {
   const dispatch = useDispatch();
   const { currentPage } = useSelector((state) => state.paramsSlice);
 
-  const paginateCount = 12;
+  const paginateCount = 2;
   return (
     <div className="pagination">
       <div className="round__shape">
