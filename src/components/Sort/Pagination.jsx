@@ -1,7 +1,13 @@
 import React from 'react';
 import './Pagination.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { setCurrentPage } from '../../redux/slices/paramsSlice';
 
 const Pagination = () => {
+  const dispatch = useDispatch();
+  const { currentPage } = useSelector((state) => state.paramsSlice);
+
+  const paginateCount = 12;
   return (
     <div className="pagination">
       <div className="round__shape">
@@ -20,17 +26,13 @@ const Pagination = () => {
           />
         </svg>
       </div>
-      {/* {[...Array(paginateCount)].length ? (
-        <ul className={style.paginationNumbers}>
+      {[...Array(paginateCount)].length ? (
+        <ul className="pagination__numbers">
           {[...Array(paginateCount)].map((_, index) => (
             <li
               key={index}
-              className={
-                paginationProperties.activePage === index + 1
-                  ? [style['roundShape'], style['active']].join(' ')
-                  : style.roundShape
-              }
-              onClick={() => dispatch(setActivePage(index + 1))}
+              className={currentPage === index + 1 ? 'round__shape active' : 'round__shape'}
+              onClick={() => dispatch(setCurrentPage(index + 1))}
             >
               {index + 1}
             </li>
@@ -38,11 +40,7 @@ const Pagination = () => {
         </ul>
       ) : (
         'No pagination'
-      )} */}
-      <ul className="pagination__numbers">
-        <li className="round__shape active">1</li>
-        <li className="round__shape">2</li>
-      </ul>
+      )}
       <div className="round__shape">
         <svg
           width="8"

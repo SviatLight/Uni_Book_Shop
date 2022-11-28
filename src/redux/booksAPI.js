@@ -6,7 +6,10 @@ export const booksAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://localhost:5001/api/' }),
   endpoints: (build) => ({
     getBooks: build.query({
-      query: () => `Book`,
+      query: ({ search, currentPage, activeThemes }) =>
+        `books?page=${currentPage}${search ? `&q=${search}` : ''}${
+          activeThemes ? activeThemes.join('') : ''
+        }`,
       providesTags: (result) =>
         result
           ? [...result.map(({ id }) => ({ type: 'Books', id })), { type: 'Books', id: 'LIST' }]

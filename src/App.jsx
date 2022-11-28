@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import BookPreview from './pages/BookPreview';
+import Login from './pages/Login';
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/book/:id" element={<BookPreview />} />
+          {/* <Route path="/signup" element={<Auth />} /> */}
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

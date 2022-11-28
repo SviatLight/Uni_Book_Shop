@@ -7,11 +7,19 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const BooksList = () => {
-  const { search } = useSelector((state) => state.paramsSlice);
-  const { data: books = [], isError: BookError, isLoading: BookLoading } = useGetBooksQuery();
-  console.log(search);
+  const { search, currentPage, activeThemes } = useSelector((state) => state.paramsSlice);
+  const {
+    data: books = [],
+    isError: BookError,
+    isLoading: BookLoading,
+  } = useGetBooksQuery({ search, currentPage, activeThemes });
+
   if (BookError) {
     return <h1>Сталася посилка, спробуйте перезавантажити сторінку!</h1>;
+  }
+
+  if (books.length === 0) {
+    return <h1>Нічого не знайдено!</h1>;
   }
 
   return (

@@ -60,7 +60,6 @@ const HeaderBottom = () => {
             <div className="nav__user-wrapper _nav__design">
               <img src={User} alt="User" className="nav__user _nav__icons" />
             </div>
-            <p className="nav__user-log-sign">Увійти або Зареєструватися</p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const BookPreview = () => {
     (async () => {
       try {
         setIsLoadingBook(true);
-        const { data } = await axios(`https://localhost:5001/api/Book/${id}`);
+        const { data } = await axios(`https://localhost:5001/api/books/${id}`);
         setBookItem(data);
       } catch (error) {
         if (error) {

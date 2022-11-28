@@ -15,6 +15,7 @@
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -68,6 +69,8 @@
 .header__bottom-search {
   padding: 0 10px 0 30px;
   max-width: 485px;
+  padding: 0 70px 0 10px;
+
   width: 100%;
   position: relative;
 }
@@ -87,12 +90,11 @@
 .search-icon {
   position: absolute;
   top: 4px;
-  right: -45px;
+  right: 15px;
   opacity: 0.5;
 }
 
 .header__bottom-nav {
-  margin-left: 80px;
   display: flex;
   gap: 10px;
 }
@@ -112,6 +114,10 @@
   width: 24px;
 }
 
-.nav__user-log-sign {
-  width: 110px;
+.nav__user-wrapper {
+  position: relative;
+}
+
+.test {
+  position: absolute;
 }
