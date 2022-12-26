@@ -72,7 +72,7 @@ const BookPreview = () => {
           <div className="book__preview-description">
             <div className="description-author-year">
               <p>Автор: {bookItem.author}</p>
-              <p>Рік видання: 2022</p>
+              <p>Рік видання: {bookItem.yearPublished}</p>
             </div>
             <div className="description-translated">
               <p>Видавництво: {bookItem.edition}</p>

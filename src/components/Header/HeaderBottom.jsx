@@ -6,6 +6,7 @@ import Heart from '../../assets/img/heart.png';
 import User from '../../assets/img/user.png';
 import { useDispatch } from 'react-redux';
 import { setSearch } from '../../redux/slices/paramsSlice';
+import { Link } from 'react-router-dom';
 
 const HeaderBottom = () => {
   const dispatch = useDispatch();
@@ -51,9 +52,9 @@ const HeaderBottom = () => {
             <img src={Search} alt="Search" className="search-icon" />
           </div>
           <div className="header__bottom-nav">
-            <div className="nav__cart-wrapper _nav__design">
+            <Link to="/cart" className="nav__cart-wrapper _nav__design">
               <img src={Cart} alt="Cart" className="nav__cart _nav__icons" />
-            </div>
+            </Link>
             <div className="nav__favorite-wrapper _nav__design">
               <img src={Heart} alt="Heart" className="nav__favorite _nav__icons" />
             </div>

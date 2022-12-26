@@ -19,7 +19,7 @@ const Filter = () => {
           <FilterItem
             key={item + index}
             item={item}
-            name={'check'}
+            name={'theme'}
             setActiveCheckbox={setActiveThemes}
             removeAnActiveCheckbox={removeAnActiveThemes}
           />

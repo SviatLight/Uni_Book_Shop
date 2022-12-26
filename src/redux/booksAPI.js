@@ -7,7 +7,7 @@ export const booksAPI = createApi({
   endpoints: (build) => ({
     getBooks: build.query({
       query: ({ search, currentPage, activeThemes }) =>
-        `books?page=${currentPage}${search ? `&q=${search}` : ''}${
+        `books?Page=${currentPage}${search ? `&q=${search}` : ''}${
           activeThemes ? activeThemes.join('') : ''
         }`,
       providesTags: (result) =>
